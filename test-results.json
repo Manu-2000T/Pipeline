@@ -1,0 +1,434 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Manu T\\Desktop\\POM\\playwright.config.ts",
+    "rootDir": "C:/Users/Manu T/Desktop/POM/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 600000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/Manu T/Desktop/POM/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "setup",
+        "name": "setup",
+        "testDir": "C:/Users/Manu T/Desktop/POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "/.*\\.setup\\.ts/"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Manu T/Desktop/POM/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Manu T/Desktop/POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Manu T/Desktop/POM/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "C:/Users/Manu T/Desktop/POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "C:/Users/Manu T/Desktop/POM/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "C:/Users/Manu T/Desktop/POM/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.53.0",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth.setup.ts",
+      "file": "auth.setup.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Create customer 01 auth",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "setup",
+              "projectName": "setup",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22079,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:57:45.992Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\auth.setup.ts-Create-customer-01-auth-setup\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "17e3fe6f4d9d8bd79c6b-c6fdf7882154519bc17e",
+          "file": "auth.setup.ts",
+          "line": 7,
+          "column": 6
+        }
+      ]
+    },
+    {
+      "title": "api.spec.ts",
+      "file": "api.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "GET/products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 853,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  current_page: \u001b[33m1\u001b[39m,\n  data: [\n    {\n      id: \u001b[32m'01K0308ZDDFZ5R9R7WK7E03RT1'\u001b[39m,\n      name: \u001b[32m'Combination Pliers'\u001b[39m,\n      description: \u001b[32m'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra felis nec pellentesque feugiat. Donec faucibus arcu maximus, convallis nisl eu, placerat dolor. Morbi finibus neque nec tincidunt pharetra. Sed eget tortor malesuada, mollis enim id, condimentum nisi. In viverra quam at bibendum ultricies. Aliquam quis eros ex. Etiam at pretium massa, ut pharetra tortor. Sed vel metus sem. Suspendisse ac molestie turpis. Duis luctus justo massa, faucibus ornare eros elementum et. Vestibulum quis nisl vitae ante dapibus tempor auctor ut leo. Mauris consectetur et magna at ultricies. Proin a aliquet turpis.'\u001b[39m,\n      price: \u001b[33m14.15\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDHSWXHHH4J3Z620G3W'\u001b[39m,\n      name: \u001b[32m'Pliers'\u001b[39m,\n      description: \u001b[32m'Nunc vulputate, orci at congue faucibus, enim neque sodales nulla, nec imperdiet augue odio vel nibh. Etiam auctor, ligula quis gravida dictum, mi massa commodo ante, sollicitudin pulvinar nulla justo hendrerit lacus. Vivamus rutrum pharetra molestie. Fusce tristique odio tristique, elementum est eget, porttitor diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at ligula sed sapien porta pretium. Aenean cursus, magna in blandit consectetur, libero orci aliquet eros, et maximus nunc est eu dolor. Aenean non pellentesque eros. In sodales orci eget orci fringilla, vitae feugiat elit porta. Etiam aliquam, mi pretium tempus mattis, mauris ipsum gravida risus, at tempor nulla ipsum molestie ligula. Ut placerat, urna sit amet tincidunt volutpat, ex orci luctus purus, nec laoreet dolor sapien vel erat.'\u001b[39m,\n      price: \u001b[33m12.01\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDMSWTJ75JY97P0W8EQ'\u001b[39m,\n      name: \u001b[32m'Bolt Cutters'\u001b[39m,\n      description: \u001b[32m'Aliquam viverra scelerisque tempus. Ut vehicula, ex sed elementum rhoncus, sem neque vehicula turpis, sit amet accumsan mauris justo non magna. Cras ut vulputate lectus, sit amet sollicitudin enim. Quisque sit amet turpis ut orci pulvinar vestibulum non at velit. Quisque ultrices malesuada felis non rutrum. Sed molestie lobortis nisl, in varius arcu dictum vel. In sit amet fringilla orci. Quisque ac magna dui. Nam pulvinar nulla sed commodo ultricies. Suspendisse aliquet quis eros sit amet gravida. Aenean vitae arcu in sapien sodales commodo.'\u001b[39m,\n      price: \u001b[33m48.41\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDP1ZG67Y7QKJW1RKVC'\u001b[39m,\n      name: \u001b[32m'Long Nose Pliers'\u001b[39m,\n      description: \u001b[32m'Phasellus consequat fermentum quam id sodales. Curabitur nec dui orci. Fusce id turpis laoreet, lobortis ex non, finibus libero. Vivamus id enim eu nibh placerat maximus. Aenean semper dui a laoreet venenatis. Vestibulum at ligula quam. Donec interdum tristique neque lacinia laoreet. Sed auctor fermentum congue. Integer aliquet vulputate feugiat. Quisque malesuada diam iaculis ornare maximus. Mauris quam massa, sodales at mattis non, consectetur eget magna. Aliquam eget congue metus, sed congue leo. Nam sit amet est id ligula volutpat pharetra non id nisl. Vestibulum ac enim vitae nisi tempus cursus. Aliquam erat volutpat.'\u001b[39m,\n      price: \u001b[33m14.24\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mfalse\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDRJX7MRW1H09QSZA2X'\u001b[39m,\n      name: \u001b[32m'Slip Joint Pliers'\u001b[39m,\n      description: \u001b[32m'Ut cursus dui non ante convallis, facilisis auctor leo luctus. Maecenas a rhoncus metus. Sed in efficitur dolor, vulputate accumsan odio. Sed ex quam, dictum in fringilla at, vestibulum eu sem. Quisque ante orci, vulputate non porttitor eu, aliquet et nunc. Nunc a rhoncus dui. Nunc ac est non eros scelerisque maximus at a eros. Phasellus sed egestas diam, at tempus erat. Morbi sit amet congue tellus, at accumsan magna. Etiam non ornare nisl, sed luctus nisi. Pellentesque ut odio ut sapien aliquet eleifend.'\u001b[39m,\n      price: \u001b[33m9.17\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDSBN273RE9K7DQAXYK'\u001b[39m,\n      name: \u001b[32m'Claw Hammer with Shock Reduction Grip'\u001b[39m,\n      description: \u001b[32m'Nam efficitur, turpis molestie bibendum lobortis, risus arcu congue tortor, id consequat nibh sem a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non tincidunt tortor, vel ultricies tortor. Vivamus pulvinar efficitur arcu sit amet accumsan. Aenean dui erat, bibendum at dapibus in, feugiat non eros. Duis sodales felis ex, quis ullamcorper odio interdum non. Ut viverra magna eu augue luctus, quis convallis lectus auctor. Duis ultrices erat urna. Aliquam augue odio, mattis vitae finibus in, pellentesque nec dui. Curabitur nec odio in augue posuere posuere. Vivamus ante est, iaculis ut interdum et, hendrerit ac ante. Fusce ac venenatis neque, id fermentum nulla. Quisque tristique ornare nisi, vitae convallis dui faucibus quis. Vestibulum vel dapibus dolor.'\u001b[39m,\n      price: \u001b[33m13.41\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDVF8D4249KBY6XQJK5'\u001b[39m,\n      name: \u001b[32m'Hammer'\u001b[39m,\n      description: \u001b[32m'Mauris mollis odio est, ac vehicula dui lobortis vel. Cras facilisis, mauris ut vehicula dignissim, ex nunc sollicitudin velit, a fermentum mi odio ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a sapien vel libero fermentum rhoncus. Etiam ac imperdiet arcu, ac accumsan risus. Fusce vitae lacinia sem, sit amet sagittis lorem. Curabitur efficitur ultricies sem, eu placerat ante tincidunt a. Morbi faucibus ullamcorper mi a mollis. Aenean sed magna aliquam, mollis dui at, condimentum ex. Donec blandit bibendum enim, lacinia vestibulum tellus laoreet sollicitudin. In vitae ullamcorper metus, ut interdum augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam scelerisque dignissim varius. Nulla facilisi. Praesent eros dolor, ultricies sit amet pellentesque porttitor, pretium ut lectus. Nullam tempus tellus sapien, non condimentum mauris volutpat eget.'\u001b[39m,\n      price: \u001b[33m12.58\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDX0TDMNHCCKAZYBDGZ'\u001b[39m,\n      name: \u001b[32m'Claw Hammer'\u001b[39m,\n      description: \u001b[32m'Cras pulvinar nisl a quam fringilla tempus. Sed lectus urna, mattis quis arcu eget, aliquam laoreet mauris. Praesent accumsan facilisis eros, ac mattis nulla interdum nec. Phasellus ultrices eu metus in lobortis. Donec ac efficitur orci. Phasellus nulla neque, congue nec tincidunt id, ultrices vel sapien. Curabitur gravida ex leo, laoreet mollis arcu blandit vel.'\u001b[39m,\n      price: \u001b[33m11.48\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDY0N0SAJMWZ2FR0PME'\u001b[39m,\n      name: \u001b[32m'Thor Hammer'\u001b[39m,\n      description: \u001b[32m'Donec malesuada tempus purus. Integer sit amet arcu magna. Sed vel laoreet ligula, non sollicitudin ex. Mauris euismod ac dolor venenatis lobortis. Aliquam iaculis at diam nec accumsan. Ut sodales sed elit et imperdiet. Maecenas vitae molestie mauris. Integer quis placerat libero, in finibus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.'\u001b[39m,\n      price: \u001b[33m11.14\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    }\n  ],\n  from: \u001b[33m1\u001b[39m,\n  last_page: \u001b[33m6\u001b[39m,\n  per_page: \u001b[33m9\u001b[39m,\n  to: \u001b[33m9\u001b[39m,\n  total: \u001b[33m50\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:58:10.068Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\api-GET-products-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-e6c5c83a9c5df1d02930",
+          "file": "api.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "GET/products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 958,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  current_page: \u001b[33m1\u001b[39m,\n  data: [\n    {\n      id: \u001b[32m'01K0308ZDDFZ5R9R7WK7E03RT1'\u001b[39m,\n      name: \u001b[32m'Combination Pliers'\u001b[39m,\n      description: \u001b[32m'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra felis nec pellentesque feugiat. Donec faucibus arcu maximus, convallis nisl eu, placerat dolor. Morbi finibus neque nec tincidunt pharetra. Sed eget tortor malesuada, mollis enim id, condimentum nisi. In viverra quam at bibendum ultricies. Aliquam quis eros ex. Etiam at pretium massa, ut pharetra tortor. Sed vel metus sem. Suspendisse ac molestie turpis. Duis luctus justo massa, faucibus ornare eros elementum et. Vestibulum quis nisl vitae ante dapibus tempor auctor ut leo. Mauris consectetur et magna at ultricies. Proin a aliquet turpis.'\u001b[39m,\n      price: \u001b[33m14.15\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDHSWXHHH4J3Z620G3W'\u001b[39m,\n      name: \u001b[32m'Pliers'\u001b[39m,\n      description: \u001b[32m'Nunc vulputate, orci at congue faucibus, enim neque sodales nulla, nec imperdiet augue odio vel nibh. Etiam auctor, ligula quis gravida dictum, mi massa commodo ante, sollicitudin pulvinar nulla justo hendrerit lacus. Vivamus rutrum pharetra molestie. Fusce tristique odio tristique, elementum est eget, porttitor diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at ligula sed sapien porta pretium. Aenean cursus, magna in blandit consectetur, libero orci aliquet eros, et maximus nunc est eu dolor. Aenean non pellentesque eros. In sodales orci eget orci fringilla, vitae feugiat elit porta. Etiam aliquam, mi pretium tempus mattis, mauris ipsum gravida risus, at tempor nulla ipsum molestie ligula. Ut placerat, urna sit amet tincidunt volutpat, ex orci luctus purus, nec laoreet dolor sapien vel erat.'\u001b[39m,\n      price: \u001b[33m12.01\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDMSWTJ75JY97P0W8EQ'\u001b[39m,\n      name: \u001b[32m'Bolt Cutters'\u001b[39m,\n      description: \u001b[32m'Aliquam viverra scelerisque tempus. Ut vehicula, ex sed elementum rhoncus, sem neque vehicula turpis, sit amet accumsan mauris justo non magna. Cras ut vulputate lectus, sit amet sollicitudin enim. Quisque sit amet turpis ut orci pulvinar vestibulum non at velit. Quisque ultrices malesuada felis non rutrum. Sed molestie lobortis nisl, in varius arcu dictum vel. In sit amet fringilla orci. Quisque ac magna dui. Nam pulvinar nulla sed commodo ultricies. Suspendisse aliquet quis eros sit amet gravida. Aenean vitae arcu in sapien sodales commodo.'\u001b[39m,\n      price: \u001b[33m48.41\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDP1ZG67Y7QKJW1RKVC'\u001b[39m,\n      name: \u001b[32m'Long Nose Pliers'\u001b[39m,\n      description: \u001b[32m'Phasellus consequat fermentum quam id sodales. Curabitur nec dui orci. Fusce id turpis laoreet, lobortis ex non, finibus libero. Vivamus id enim eu nibh placerat maximus. Aenean semper dui a laoreet venenatis. Vestibulum at ligula quam. Donec interdum tristique neque lacinia laoreet. Sed auctor fermentum congue. Integer aliquet vulputate feugiat. Quisque malesuada diam iaculis ornare maximus. Mauris quam massa, sodales at mattis non, consectetur eget magna. Aliquam eget congue metus, sed congue leo. Nam sit amet est id ligula volutpat pharetra non id nisl. Vestibulum ac enim vitae nisi tempus cursus. Aliquam erat volutpat.'\u001b[39m,\n      price: \u001b[33m14.24\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mfalse\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDRJX7MRW1H09QSZA2X'\u001b[39m,\n      name: \u001b[32m'Slip Joint Pliers'\u001b[39m,\n      description: \u001b[32m'Ut cursus dui non ante convallis, facilisis auctor leo luctus. Maecenas a rhoncus metus. Sed in efficitur dolor, vulputate accumsan odio. Sed ex quam, dictum in fringilla at, vestibulum eu sem. Quisque ante orci, vulputate non porttitor eu, aliquet et nunc. Nunc a rhoncus dui. Nunc ac est non eros scelerisque maximus at a eros. Phasellus sed egestas diam, at tempus erat. Morbi sit amet congue tellus, at accumsan magna. Etiam non ornare nisl, sed luctus nisi. Pellentesque ut odio ut sapien aliquet eleifend.'\u001b[39m,\n      price: \u001b[33m9.17\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDSBN273RE9K7DQAXYK'\u001b[39m,\n      name: \u001b[32m'Claw Hammer with Shock Reduction Grip'\u001b[39m,\n      description: \u001b[32m'Nam efficitur, turpis molestie bibendum lobortis, risus arcu congue tortor, id consequat nibh sem a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non tincidunt tortor, vel ultricies tortor. Vivamus pulvinar efficitur arcu sit amet accumsan. Aenean dui erat, bibendum at dapibus in, feugiat non eros. Duis sodales felis ex, quis ullamcorper odio interdum non. Ut viverra magna eu augue luctus, quis convallis lectus auctor. Duis ultrices erat urna. Aliquam augue odio, mattis vitae finibus in, pellentesque nec dui. Curabitur nec odio in augue posuere posuere. Vivamus ante est, iaculis ut interdum et, hendrerit ac ante. Fusce ac venenatis neque, id fermentum nulla. Quisque tristique ornare nisi, vitae convallis dui faucibus quis. Vestibulum vel dapibus dolor.'\u001b[39m,\n      price: \u001b[33m13.41\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDVF8D4249KBY6XQJK5'\u001b[39m,\n      name: \u001b[32m'Hammer'\u001b[39m,\n      description: \u001b[32m'Mauris mollis odio est, ac vehicula dui lobortis vel. Cras facilisis, mauris ut vehicula dignissim, ex nunc sollicitudin velit, a fermentum mi odio ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a sapien vel libero fermentum rhoncus. Etiam ac imperdiet arcu, ac accumsan risus. Fusce vitae lacinia sem, sit amet sagittis lorem. Curabitur efficitur ultricies sem, eu placerat ante tincidunt a. Morbi faucibus ullamcorper mi a mollis. Aenean sed magna aliquam, mollis dui at, condimentum ex. Donec blandit bibendum enim, lacinia vestibulum tellus laoreet sollicitudin. In vitae ullamcorper metus, ut interdum augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam scelerisque dignissim varius. Nulla facilisi. Praesent eros dolor, ultricies sit amet pellentesque porttitor, pretium ut lectus. Nullam tempus tellus sapien, non condimentum mauris volutpat eget.'\u001b[39m,\n      price: \u001b[33m12.58\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDX0TDMNHCCKAZYBDGZ'\u001b[39m,\n      name: \u001b[32m'Claw Hammer'\u001b[39m,\n      description: \u001b[32m'Cras pulvinar nisl a quam fringilla tempus. Sed lectus urna, mattis quis arcu eget, aliquam laoreet mauris. Praesent accumsan facilisis eros, ac mattis nulla interdum nec. Phasellus ultrices eu metus in lobortis. Donec ac efficitur orci. Phasellus nulla neque, congue nec tincidunt id, ultrices vel sapien. Curabitur gravida ex leo, laoreet mollis arcu blandit vel.'\u001b[39m,\n      price: \u001b[33m11.48\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDY0N0SAJMWZ2FR0PME'\u001b[39m,\n      name: \u001b[32m'Thor Hammer'\u001b[39m,\n      description: \u001b[32m'Donec malesuada tempus purus. Integer sit amet arcu magna. Sed vel laoreet ligula, non sollicitudin ex. Mauris euismod ac dolor venenatis lobortis. Aliquam iaculis at diam nec accumsan. Ut sodales sed elit et imperdiet. Maecenas vitae molestie mauris. Integer quis placerat libero, in finibus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.'\u001b[39m,\n      price: \u001b[33m11.14\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    }\n  ],\n  from: \u001b[33m1\u001b[39m,\n  last_page: \u001b[33m6\u001b[39m,\n  per_page: \u001b[33m9\u001b[39m,\n  to: \u001b[33m9\u001b[39m,\n  total: \u001b[33m50\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:58:10.051Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\api-GET-products-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-d0a7796b05ab1e030428",
+          "file": "api.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "GET/products",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1146,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "{\n  current_page: \u001b[33m1\u001b[39m,\n  data: [\n    {\n      id: \u001b[32m'01K0308ZDDFZ5R9R7WK7E03RT1'\u001b[39m,\n      name: \u001b[32m'Combination Pliers'\u001b[39m,\n      description: \u001b[32m'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris viverra felis nec pellentesque feugiat. Donec faucibus arcu maximus, convallis nisl eu, placerat dolor. Morbi finibus neque nec tincidunt pharetra. Sed eget tortor malesuada, mollis enim id, condimentum nisi. In viverra quam at bibendum ultricies. Aliquam quis eros ex. Etiam at pretium massa, ut pharetra tortor. Sed vel metus sem. Suspendisse ac molestie turpis. Duis luctus justo massa, faucibus ornare eros elementum et. Vestibulum quis nisl vitae ante dapibus tempor auctor ut leo. Mauris consectetur et magna at ultricies. Proin a aliquet turpis.'\u001b[39m,\n      price: \u001b[33m14.15\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDHSWXHHH4J3Z620G3W'\u001b[39m,\n      name: \u001b[32m'Pliers'\u001b[39m,\n      description: \u001b[32m'Nunc vulputate, orci at congue faucibus, enim neque sodales nulla, nec imperdiet augue odio vel nibh. Etiam auctor, ligula quis gravida dictum, mi massa commodo ante, sollicitudin pulvinar nulla justo hendrerit lacus. Vivamus rutrum pharetra molestie. Fusce tristique odio tristique, elementum est eget, porttitor diam. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas at ligula sed sapien porta pretium. Aenean cursus, magna in blandit consectetur, libero orci aliquet eros, et maximus nunc est eu dolor. Aenean non pellentesque eros. In sodales orci eget orci fringilla, vitae feugiat elit porta. Etiam aliquam, mi pretium tempus mattis, mauris ipsum gravida risus, at tempor nulla ipsum molestie ligula. Ut placerat, urna sit amet tincidunt volutpat, ex orci luctus purus, nec laoreet dolor sapien vel erat.'\u001b[39m,\n      price: \u001b[33m12.01\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDMSWTJ75JY97P0W8EQ'\u001b[39m,\n      name: \u001b[32m'Bolt Cutters'\u001b[39m,\n      description: \u001b[32m'Aliquam viverra scelerisque tempus. Ut vehicula, ex sed elementum rhoncus, sem neque vehicula turpis, sit amet accumsan mauris justo non magna. Cras ut vulputate lectus, sit amet sollicitudin enim. Quisque sit amet turpis ut orci pulvinar vestibulum non at velit. Quisque ultrices malesuada felis non rutrum. Sed molestie lobortis nisl, in varius arcu dictum vel. In sit amet fringilla orci. Quisque ac magna dui. Nam pulvinar nulla sed commodo ultricies. Suspendisse aliquet quis eros sit amet gravida. Aenean vitae arcu in sapien sodales commodo.'\u001b[39m,\n      price: \u001b[33m48.41\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDP1ZG67Y7QKJW1RKVC'\u001b[39m,\n      name: \u001b[32m'Long Nose Pliers'\u001b[39m,\n      description: \u001b[32m'Phasellus consequat fermentum quam id sodales. Curabitur nec dui orci. Fusce id turpis laoreet, lobortis ex non, finibus libero. Vivamus id enim eu nibh placerat maximus. Aenean semper dui a laoreet venenatis. Vestibulum at ligula quam. Donec interdum tristique neque lacinia laoreet. Sed auctor fermentum congue. Integer aliquet vulputate feugiat. Quisque malesuada diam iaculis ornare maximus. Mauris quam massa, sodales at mattis non, consectetur eget magna. Aliquam eget congue metus, sed congue leo. Nam sit amet est id ligula volutpat pharetra non id nisl. Vestibulum ac enim vitae nisi tempus cursus. Aliquam erat volutpat.'\u001b[39m,\n      price: \u001b[33m14.24\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mfalse\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDRJX7MRW1H09QSZA2X'\u001b[39m,\n      name: \u001b[32m'Slip Joint Pliers'\u001b[39m,\n      description: \u001b[32m'Ut cursus dui non ante convallis, facilisis auctor leo luctus. Maecenas a rhoncus metus. Sed in efficitur dolor, vulputate accumsan odio. Sed ex quam, dictum in fringilla at, vestibulum eu sem. Quisque ante orci, vulputate non porttitor eu, aliquet et nunc. Nunc a rhoncus dui. Nunc ac est non eros scelerisque maximus at a eros. Phasellus sed egestas diam, at tempus erat. Morbi sit amet congue tellus, at accumsan magna. Etiam non ornare nisl, sed luctus nisi. Pellentesque ut odio ut sapien aliquet eleifend.'\u001b[39m,\n      price: \u001b[33m9.17\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDSBN273RE9K7DQAXYK'\u001b[39m,\n      name: \u001b[32m'Claw Hammer with Shock Reduction Grip'\u001b[39m,\n      description: \u001b[32m'Nam efficitur, turpis molestie bibendum lobortis, risus arcu congue tortor, id consequat nibh sem a libero. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean non tincidunt tortor, vel ultricies tortor. Vivamus pulvinar efficitur arcu sit amet accumsan. Aenean dui erat, bibendum at dapibus in, feugiat non eros. Duis sodales felis ex, quis ullamcorper odio interdum non. Ut viverra magna eu augue luctus, quis convallis lectus auctor. Duis ultrices erat urna. Aliquam augue odio, mattis vitae finibus in, pellentesque nec dui. Curabitur nec odio in augue posuere posuere. Vivamus ante est, iaculis ut interdum et, hendrerit ac ante. Fusce ac venenatis neque, id fermentum nulla. Quisque tristique ornare nisi, vitae convallis dui faucibus quis. Vestibulum vel dapibus dolor.'\u001b[39m,\n      price: \u001b[33m13.41\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDVF8D4249KBY6XQJK5'\u001b[39m,\n      name: \u001b[32m'Hammer'\u001b[39m,\n      description: \u001b[32m'Mauris mollis odio est, ac vehicula dui lobortis vel. Cras facilisis, mauris ut vehicula dignissim, ex nunc sollicitudin velit, a fermentum mi odio ut massa. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a sapien vel libero fermentum rhoncus. Etiam ac imperdiet arcu, ac accumsan risus. Fusce vitae lacinia sem, sit amet sagittis lorem. Curabitur efficitur ultricies sem, eu placerat ante tincidunt a. Morbi faucibus ullamcorper mi a mollis. Aenean sed magna aliquam, mollis dui at, condimentum ex. Donec blandit bibendum enim, lacinia vestibulum tellus laoreet sollicitudin. In vitae ullamcorper metus, ut interdum augue. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam scelerisque dignissim varius. Nulla facilisi. Praesent eros dolor, ultricies sit amet pellentesque porttitor, pretium ut lectus. Nullam tempus tellus sapien, non condimentum mauris volutpat eget.'\u001b[39m,\n      price: \u001b[33m12.58\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDX0TDMNHCCKAZYBDGZ'\u001b[39m,\n      name: \u001b[32m'Claw Hammer'\u001b[39m,\n      description: \u001b[32m'Cras pulvinar nisl a quam fringilla tempus. Sed lectus urna, mattis quis arcu eget, aliquam laoreet mauris. Praesent accumsan facilisis eros, ac mattis nulla interdum nec. Phasellus ultrices eu metus in lobortis. Donec ac efficitur orci. Phasellus nulla neque, congue nec tincidunt id, ultrices vel sapien. Curabitur gravida ex leo, laoreet mollis arcu blandit vel.'\u001b[39m,\n      price: \u001b[33m11.48\u001b[39m,\n      is_location_offer: \u001b[33mtrue\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    },\n    {\n      id: \u001b[32m'01K0308ZDY0N0SAJMWZ2FR0PME'\u001b[39m,\n      name: \u001b[32m'Thor Hammer'\u001b[39m,\n      description: \u001b[32m'Donec malesuada tempus purus. Integer sit amet arcu magna. Sed vel laoreet ligula, non sollicitudin ex. Mauris euismod ac dolor venenatis lobortis. Aliquam iaculis at diam nec accumsan. Ut sodales sed elit et imperdiet. Maecenas vitae molestie mauris. Integer quis placerat libero, in finibus diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.'\u001b[39m,\n      price: \u001b[33m11.14\u001b[39m,\n      is_location_offer: \u001b[33mfalse\u001b[39m,\n      is_rental: \u001b[33mfalse\u001b[39m,\n      in_stock: \u001b[33mtrue\u001b[39m,\n      product_image: \u001b[36m[Object]\u001b[39m,\n      category: \u001b[36m[Object]\u001b[39m,\n      brand: \u001b[36m[Object]\u001b[39m\n    }\n  ],\n  from: \u001b[33m1\u001b[39m,\n  last_page: \u001b[33m6\u001b[39m,\n  per_page: \u001b[33m9\u001b[39m,\n  to: \u001b[33m9\u001b[39m,\n  total: \u001b[33m50\u001b[39m\n}\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:58:13.091Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\api-GET-products-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "1ea1b1599cbc08f16936-2e8100657696d9e01954",
+          "file": "api.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "Link.spec.ts",
+      "file": "Link.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Login with valid user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 5435,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:58:10.020Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\Link-Login-with-valid-user-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ba186d5a6351859bfeab-4988587e4bba4176e31b",
+          "file": "Link.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Login with valid user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 7057,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:58:10.083Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\Link-Login-with-valid-user-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ba186d5a6351859bfeab-f1571e1516143c3413c7",
+          "file": "Link.spec.ts",
+          "line": 4,
+          "column": 5
+        },
+        {
+          "title": "Login with valid user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 9121,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-07-13T23:58:13.373Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Manu T\\Desktop\\POM\\test-results\\Link-Login-with-valid-user-webkit\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "ba186d5a6351859bfeab-b1c1f6c09ac425a3dd0c",
+          "file": "Link.spec.ts",
+          "line": 4,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-07-13T23:57:45.181Z",
+    "duration": 37907.145000000004,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
